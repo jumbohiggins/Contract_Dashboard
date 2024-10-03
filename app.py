@@ -6,10 +6,10 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
-@app.route('/static/games_over_time.html')
+@app.route('games_over_time.html')
 def serve_plot():
     # Serve the already saved Plotly HTML from the static directory
-    return send_from_directory('static', 'games_over_time.html')
+    return send_from_directory('games_over_time.html')
 
 if __name__ == '__main__':
     app.run(debug=True)

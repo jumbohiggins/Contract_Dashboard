@@ -90,6 +90,7 @@ def plot_games(df):
     fig.write_html(output_file)
 
     # Print the location of the HTML file
+    print('Test1')
     print(f"Plot saved as: {os.path.abspath(output_file)}")
 
     # Show figure
